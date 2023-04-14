@@ -1,0 +1,20 @@
+.home-container{
+   display: grid;
+   grid-template-columns:3fr 1fr;
+   gap: 15px;
+}
+.products-container{
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+.products-container img{
+    width: 100%;
+    border-radius: 8px;
+}
+@media screen and (max-width:576px) {
+    .products-container{
+        display: flex;
+        flex-direction: column;
+    }
+}
